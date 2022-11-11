@@ -1,0 +1,5 @@
+body{
+  color:red;
+  font-size :100px;
+  font-family: 'Nanum Gothic', sans-serif;/*각종 웹브라우저에 호환되는 나눔고딕체 적용*/
+}
