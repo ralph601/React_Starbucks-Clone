@@ -245,51 +245,77 @@ header .badges .badge{
   cursor: pointer;
 }
 /*VISUAL*/
-.visual{
+.visual {
   margin-top: 120px;
   background-image: url("../images/visual_bg.jpg");
   background-position: center;
 }
-.visual .inner{
+.visual .inner {
   height: 646px;
-
 }
-.visual .title{
+.visual .title {
   position: absolute;
-  top:88px;
+  top: 88px;
   left: -10px;
 }
-.visual .title .btn{
+.visual .title .btn {
   position: absolute;
   top: 259px;
   left: 173px;
 }
-.visual .cup1.image{
+.visual .cup1.image {
   position: absolute;
   bottom: 0;
   right: -47px;
 }
-.visual .cup1.text{
+.visual .cup1.text {
   position: absolute;
   top: 38px;
   right: 171px;
 }
-.visual .cup2.image{
+.visual .cup2.image {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   right: 162px;
 }
-.visual .cup2.text{
+.visual .cup2.text {
   position: absolute;
-  top:321px;
+  top: 321px;
   right: 416px;
 }
-.visual .spoon{
+.visual .spoon {
   position: absolute;
-  bottom:0;
-  right: 275px;
+  bottom: 0;
+  left: 275px;
 }
-.visual .fade-in{
+.visual .fade-in {
   opacity: 0;
-  
+}
+
+
+/*NOTICE*/
+.notice{
+
+}
+.notice .notice-line {
+  position: relative;
+}
+.notice .notice-line .bg-left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #333;
+}
+.notice .notice-line .bg-right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #f6f5ef;
+}
+.notice .notice-line .bg-left .inner{
+  height: 62px;
 }
