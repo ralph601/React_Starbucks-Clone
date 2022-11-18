@@ -37,16 +37,23 @@ window.addEventListener('scroll', _.throttle(function(){ /*함수 실행 시 과
 // _.throttle(함수, 시간)
 
 
-const fadeEls = document.querySelectorAll('.visual .fade-in');
-fadeEls.forEach(function(fadeEl,index){
+// 나타날 요소들(.fade-in) 찾기.
+const fadeEls = document.querySelectorAll('.visual .fade-in')
+// 나타날 요소들을 하나씩 반복해서 처리!
+fadeEls.forEach(function (fadeEl, index) {
+  // 각 요소들을 순서대로(delay) 보여지게 함!
   gsap.to(fadeEl, 1, {
     delay: (index + 1) * .7,
     opacity: 1
-  });
-});
+  })
+})
 
-new Swiper('.notice-line .swiper-container',{
-  direction:'vertical',
-  autoplay: true,
-  loof: true
-});
+
+/**
+ * 슬라이드 요소 관리
+ */
+new Swiper('.notice-line .swiper-container', {
+  direction: 'vertical', // 수직 슬라이드
+  // autoplay: true, // 자동 재생 여부
+  // loop: true // 반복 재생 여부
+})
