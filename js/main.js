@@ -74,4 +74,16 @@ new Swiper('.promotion .swiper-container', {
     prevEl: '.promotion .swiper-prev',
     nextEl: '.promotion .swiper-next'
   }
-})
+});
+
+const promotionEl=document.querySelector('.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion');
+let isHidePromotion = false;
+promotionToggleBtn.addEventListener('click',function(){
+  isHidePromotion = !isHidePromotion
+  if(isHidePromotion){
+    promotionEl.classList.add('hide');
+  }else{
+    promotionEl.classList.remove('hide');
+  }
+});
