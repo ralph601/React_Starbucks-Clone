@@ -54,8 +54,8 @@ fadeEls.forEach(function (fadeEl, index) {
  */
 new Swiper('.notice-line .swiper-container', {
   direction: 'vertical', // 수직 슬라이드
-  // autoplay: true, // 자동 재생 여부
-  // loop: true // 반복 재생 여부
+  autoplay: true, // 자동 재생 여부
+  loop: true // 반복 재생 여부
 });
 new Swiper('.promotion .swiper-container', {
   // direction:'horizontal',
@@ -65,10 +65,10 @@ new Swiper('.promotion .swiper-container', {
   // loop:true,
   // autoplay:{
   //   delay: 5000
-  // }
+  // },
   pagination:{
     el:'.promotion .swiper-pagination', // 페이지 번호 요소 선택자
-    clickable:true
+    clickable: true
   },
   navigation: {
     prevEl: '.promotion .swiper-prev',
