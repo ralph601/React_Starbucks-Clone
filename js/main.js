@@ -74,4 +74,4 @@ new Swiper('.promotion .swiper-container', {
     prevEl: '.promotion .swiper-prev',
     nextEl: '.promotion .swiper-next'
   }
-});
+})
