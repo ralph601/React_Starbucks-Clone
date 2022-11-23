@@ -786,3 +786,22 @@ header .badges .badge {
   background-color: #fff;
   color:#333;
 }
+
+/* FOOTER */
+.footer{
+  background-color: #272727;
+  border-top:  1px solid #333;
+}
+.footer .inner{
+  padding: 40px 0 60px 0;
+}
+.footer .menu{
+  display: flex;
+  justify-content: center;
+}
+.footer .menu  li{
+
+}
+.footer .menu li a{
+  
+}
