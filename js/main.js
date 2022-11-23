@@ -93,18 +93,31 @@ function random(min, max) {
   // `parseFloat()`을 통해 소수점을 가지는 숫자 데이터로 변환
   return parseFloat((Math.random() * (max - min) + min).toFixed(2))
 }
-function floatingObject(selector) {
+function floatingObject(selector,delay) {
   // gsap.to(요소, 시간, 옵션)
-  gsap.to(selector, random(1.5, 2.5),
+  gsap.to(
+    selector, 
+    random(1.5, 2.5),
     {
+      delay:random(0, delay),
       y: 20,
       repeat: -1,
       yoyo: true,
-      ease: Power1.easeInOut,
-      delay:random(0, delay)
+      ease: Power1.easeInOut
     }
   );
 }
 floatingObject('.floating1',1,15);
 floatingObject('.floating2',.5,15);
 floatingObject('.floating3',1.5,20);
+
+const spyEls=document.querySelectorAll('section.scroll-spy');
+spyEls.forEach(function(spyEl){
+  new ScrollMagic
+    .Scene({
+      triggerElement: spyEl, //보여짐 여부를 감시할 요소를 지정
+      triggerHook: .8 
+  })
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller())
+})
