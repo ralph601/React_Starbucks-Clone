@@ -1,4 +1,4 @@
-/* COMMON */
+/* COMMON 전역*/
 body{
   color:#333;
   font-size: 16px;
@@ -6,13 +6,13 @@ body{
   line-height: 1.4;
   font-family: 'Nanum Gothic', sans-serif;/*각종 웹브라우저에 호환되는 나눔고딕체 적용*/
 }
-img{
+img{ /*'.'이 없으면 class 내 태그 이름을 명시*/
   display: block;
 }
 a{
   text-decoration: none;
 }
-.inner{
+.inner{ /*'.'이 붙어있으면 class의 이름을 명시한 것*/
   width: 1100px;
   margin: 0 auto;
   position: relative;
@@ -31,7 +31,7 @@ a{
   display: block;
   transition: .4s;
 }
-.btn:hover{
+.btn:hover{ /*가상 클래스 선택자*/
   background-color: #333;
   color: #fff;
 }
@@ -554,7 +554,7 @@ header .badges .badge {
   height: 100%;
 }
 
-#player{
+#player{ /* HTML id 속성의 값을 명시 */
   width: 100%;
   height: 100%;
   position: absolute;
